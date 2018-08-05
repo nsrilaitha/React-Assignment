@@ -16,32 +16,32 @@ class Test extends React.Component {
     //FirstName
     if(!fields["fname"]){
       formIsValid = false;
-      errors["fname"] = "Cannot be empty";
+      errors["class"] = "Cannot be empty";
     }
 
     if(typeof fields["fname"] !== "undefined"){
       if(!fields["fname"].match(/^[a-zA-Z]+$/)){
         formIsValid = false;
-        errors["fname"] = "Only letters";
+        errors["class"] = "Only letters";
       }      	
     }
     
      //LastName
     if(!fields["lname"]){
       formIsValid = false;
-      errors["lname"] = "Cannot be empty";
+      errors["class"] = "Cannot be empty";
     }
 
     if(typeof fields["lname"] !== "undefined"){
       if(!fields["lname"].match(/^[a-zA-Z]+$/)){
         formIsValid = false;
-        errors["lname"] = "Only letters";
+        errors["class"] = "Only letters";
       }      	
     }
    //Class
     if(!fields["cclass"]){
       formIsValid = false;
-      errors["cclass"] = "Cannot be empty";
+      errors["class"] = "Cannot be empty";
     }
 
     if(typeof fields["cclass"] !== "undefined"){
